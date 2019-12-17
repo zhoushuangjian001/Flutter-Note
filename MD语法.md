@@ -517,7 +517,7 @@ ___ 分隔线
 
 
 ## 公式
-- 行内公司
+- 行内公式
     要在行内使用公式，就要用 `$` 将要使用的公司包括。如下：
 
     ```
@@ -592,6 +592,66 @@ ___ 分隔线
     > 效果展示
 
     ![ss](./images/gongshi_6.png)
+- 对数函数
+    对数函数 log ，换底公式:
+    ```
+    $\log_{a^n} b^m$  = $\frac{m}{n} \log_a b$  
+    ```
+    > 效果展示
 
+    ![ss](./images/gongshi_7.png)
 
+- 逻辑运算 & 基本运算
+
+    ```
+    |云算符|Markdown|
+    |:--:|:--:|
+    |不等于|$\neq$|
+    |小于|$\leq$|
+    |大于|$\geq$|
+    |乘|$\times$|
+    |除|$\div$|
+    ```
+    > 效果展示
+
+    ![ss](./images/gongshi_8.png)
+
+## 流程图
+- 基础流程图  
+
+    ```
+    \``` flow  
+    // 定义类型和描述
+    st=>start: 开始
+    e=>end: 结束
+    op=>operation: 我的操作
+    cond=>condition: 判断确认？
     
+    st->op->cond
+    cond(yes)->e
+    cond(no)->op
+    \```
+    ```
+    > 效果展示
+
+    ![ss](./images/liucheng_0.png)
+
+- 完整流程图
+
+    ```
+    \``` flow
+        st=>start: 开始 
+        e=>end: 结束    
+        op=>operation: 操作
+        cond=>condition: 判断?
+        input=>inputoutput: 数据提供
+
+        st->input->op->cond
+        cond(yes)->input
+        cond(no)->e
+    \```  
+    ```
+    > 效果展示
+
+    ![ss](./images/liucheng_1.png)
+
